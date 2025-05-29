@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelor Tabur Madi na - Manfaat Luar Biasa dari Daun Kelor</title>
+    <link rel="icon" href="logo.jpeg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="logo.jpeg">
+
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --secondary: #81c784;
+            --accent: #ffc107;
+            --light: #f5f5f5;
+            --dark: #212121;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 20px;
+        }
+        
+        section {
+            margin-bottom: 3rem;
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent);
+        }
+        
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .benefit-card {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--primary);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        
+        .benefit-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .benefit-card h3::before {
+            content: '✓';
+            color: var(--accent);
+            font-weight: bold;
+            margin-right: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.8rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        .how-to-use {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+        
+        .how-to-use h2 {
+            color: white;
+        }
+        
+        .how-to-use h2::after {
+            background-color: var(--accent);
+        }
+        
+        .steps {
+            margin-top: 1rem;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: var(--accent);
+            color: var(--dark);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .cta {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--dark);
+            margin-top: 20px;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            background-color: #ffb300;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+        
+        .whatsapp-float a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .nutrition-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        
+        .nutrition-image {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .nutrition-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .nutrition-facts {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .nutrition-facts h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .nutrition-facts ul {
+            list-style-type: none;
+            margin-bottom: 1rem;
+        }
+        
+        .nutrition-facts li {
+            padding: 0.5rem 0;
+            border-bottom: 1px dashed #ddd;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .nutrition-facts li strong {
+            color: var(--primary);
+        }
+        
+        .source {
+            font-size: 0.8rem;
+            color: #666;
+            font-style: italic;
+            text-align: right;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .benefits {
+                grid-template-columns: 1fr;
+            }
+
+            .nutrition-content {
+                flex-direction: column;
+            }
+            
+            .nutrition-image, .nutrition-facts {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.jpeg" alt="Kelor Tabur Madina" class="logo">
+            <h1>KELOR TABUR MADINA</h1>
+            <p class="tagline">Nutrisi Super dalam Kemasan Praktis</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section>
+            <h2>Manfaat Kelor Tabur Madina</h2>
+            <div class="benefits">
+                <div class="benefit-card">
+                    <h3>Meningkatkan Daya Tahan Tubuh</h3>
+                    <p>Kandungan vitamin C dan antioksidan dalam kelor membantu memperkuat sistem imun tubuh.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Mencegah Stunting</h3>
+                    <p>Kaya akan nutrisi penting untuk pertumbuhan anak, membantu mencegah gangguan pertumbuhan.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Mengatasi Alergi pada Telur</h3>
+                    <p>Kandungan alaminya membantu mengurangi reaksi alergi terhadap protein telur.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Memperkaya Zat Gizi pada Makanan</h3>
+                    <p>Menambahkan nilai gizi pada makanan sehari-hari dengan mudah.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Sumber Vitamin Alami</h3>
+                    <p>Solusi bagi yang tidak suka sayur berkuah tetapi tetap ingin mendapatkan manfaat sayuran.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Sayuran Simpel untuk Orang Sibuk</h3>
+                    <p>Praktis digunakan tanpa perlu mengolah sayuran segar.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Menstabilkan Tekanan Darah & Gula</h3>
+                    <p>Membantu mengontrol tekanan darah, kadar gula darah, dan menurunkan kolesterol.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Melembutkan Kulit</h3>
+                    <p>Kandungan vitamin E dan nutrisi lainnya bermanfaat untuk kesehatan kulit.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Vitamin untuk Tanaman dan Ternak</h3>
+                    <p>Bisa digunakan sebagai suplemen alami untuk tanaman dan hewan ternak.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Membantu Penyembuhan Flu dan Batuk</h3>
+                    <p>Kandungan antiinflamasinya membantu meredakan gejala flu dan batuk.</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Mengatasi Sulit Tidur</h3>
+                    <p>Minum teh kelor di malam hari membantu tidur lebih nyenyak dan berkualitas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Kandungan Nutrisi Daun Kelor</h2>
+            <div class="nutrition-content">
+                <div class="nutrition-image">
+                    <img src="kandungan.jpeg" alt="Perbandingan Kandungan Nutrisi Daun Kelor dengan Makanan Lain">
+                </div>
+                <div class="nutrition-facts">
+                    <ul>
+                        <li><strong>Vitamin A:</strong> 10x lebih banyak dari wortel</li>
+                        <li><strong>Kalsium:</strong> 17x lebih banyak dari susu</li>
+                        <li><strong>Potassium:</strong> 15x lebih banyak dari pisang</li>
+                        <li><strong>Vitamin C:</strong> 12x lebih banyak dari jeruk</li>
+                        <li><strong>Zat Besi:</strong> 25x lebih banyak dari bayam</li>
+                        <li><strong>Protein:</strong> 9x lebih banyak dari yogurt</li>
+                    </ul>
+                    <p class="source">Sumber: Fugle LJ (1999) The Miracle Tree: Moringa oleifera: Natural Nutrition for the Tropics.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Cara Penggunaan Kelor Tabur Madina</h2>
+            <div class="how-to-use">
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">Untuk minuman: Seduh 1/2 sendok teh Kelor Tabur Madina dengan air panas, bisa ditambahkan madu atau susu sesuai selera.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">Untuk makanan: Taburkan pada adonan telur, bakso, nuget tempe, atau masakan lainnya sebagai penyedap alami.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">Untuk kulit: Campur 1 sendok makan Kelor Tabur dengan 1 sendok makan susu beruang atau madu, aplikasikan sebagai masker.</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">Untuk tanaman/ternak: Campurkan dengan air sebagai nutrisi tambahan.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Contoh Penggunaan Kelor Tabur Madina</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="telur.png" alt="Telur Dadar Kelor">
+                    <div class="gallery-caption">Taburkan pada adonan telur sebelum digoreng</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="bakso.jpg" alt="Bakso Kelor">
+                    <div class="gallery-caption">Campurkan dalam adonan bakso</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="nuggetTempe.jpg" alt="Nuget Tempe Kelor">
+                    <div class="gallery-caption">Tambahkan ke adonan nuget tempe</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="teh.jpg" alt="Teh Kelor">
+                    <div class="gallery-caption">Diseduh dengan air panas sebagai teh</div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="cta">
+            <h2>Siap Merasakan Manfaat Kelor Tabur Madina?</h2>
+            <p>Temukan nutrisi super dalam kemasan praktis untuk seluruh keluarga Anda</p>
+            <a href="https://wa.me/6282189981423?text=Kelor%20Tabur-nya%20ready?%3F" class="cta-button">Pesan Sekarang</a>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <h3>Kelor Tabur Madina</h3>
+        <p>Nutrisi Alami untuk Keluarga Sehat</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p>Email: madinas.km20@gmail.com</p>
+        <p>Telp: 0821-8998-1423</p>
+        <p>&copy; 2025 Kelor Tabur Madina. All Rights Reserved.</p>
+    </footer>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/6282189981423?text=Kelor%20Tabur-nya%20ready?%3F" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</body>
+</html>
