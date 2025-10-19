@@ -239,11 +239,12 @@
             background: var(--light);
             border-radius: 10px;
             padding: 2rem;
-            margin-top: 1rem;
+            margin: 1rem;
             margin-bottom: 2rem;
             display: inline-block;
             max-width: 400px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            vertical-align: top; /* Tambahkan ini */
         }
         
         .price-tag {
@@ -282,6 +283,39 @@
             color: var(--primary);
             margin-right: 0.5rem;
             font-size: 1.2rem;
+        }
+
+        .usage-instructions {
+            background: white;
+            padding: 1.2rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+            text-align: left;
+        }
+
+        .usage-instructions h4 {
+            color: var(--primary);
+            margin-bottom: 0.8rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .usage-instructions h4 i {
+            color: var(--accent);
+        }
+
+        .usage-instructions ol {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+
+        .usage-instructions li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            color: var(--dark);
+            font-size: 0.9rem;
         }
     
         footer {
@@ -604,7 +638,34 @@
                     <li><i class="fas fa-check-circle"></i> Kemasan ekonomis</li>
                     <li><i class="fas fa-check-circle"></i> Tahan lama</li>
                     <li><i class="fas fa-check-circle"></i> Cukup untuk 10-15 porsi</li>
+                    <li><i class="fas fa-check-circle"></i> Untuk Konsumsi</li>
                 </ul>
+            </div>
+            <div class="price-box">
+                <div class="price-tag">
+                    <span class="price">Rp 7.000</span>
+                    <span class="quantity">/ 25gr</span>
+                </div>
+                <p class="price-description">Harga terjangkau untuk nutrisi super yang praktis</p>
+                <ul class="price-benefits">
+                    <li><i class="fas fa-check-circle"></i> Nutrisi alami buat kulit</li>
+                    <li><i class="fas fa-check-circle"></i> Kulit terasa halus</li>
+                    <li><i class="fas fa-check-circle"></i> Membantu kulit hadapi paparan sinar matahari</li>
+                    <li><i class="fas fa-check-circle"></i> Untuk Kulit</li>
+                </ul>
+                <div class="usage-instructions">
+                    <h4><i class="fas fa-info-circle"></i> Cara Pemakaian:</h4>
+                    <p>cukup 1/2 sdt dicampur susu colagen 1 sdm</p>
+                    <!-- <ol>
+                        <li>Campurkan 1 sdm Kelor Tabur dengan 1 sdm susu beruang/madu/kolagen</li>
+                        <li>Aduk hingga membentuk pasta kental</li>
+                        <li>Bersihkan wajah terlebih dahulu</li>
+                        <li>Oleskan merata pada wajah, hindari area mata</li>
+                        <li>Diamkan 15-20 menit</li>
+                        <li>Bilas dengan air hangat</li>
+                        <li>Gunakan 2-3x seminggu untuk hasil maksimal</li>
+                    </ol> -->
+                </div>
             </div>
             <p>Temukan nutrisi super dalam kemasan praktis untuk seluruh keluarga Anda</p>
             <a href="https://wa.me/6282189981423?text=Kelor%20Tabur-nya%20ready?%3F" class="cta-button">Pesan Sekarang</a>
